@@ -1,0 +1,47 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&display=swap');
+
+.bg-1 {background-color: #2D2D34;}
+.bg-2 {background-color: #EB5160;}
+.bg-3 {background-color: #4C86A8;}
+.bg-4 {background-color: #F2AF29;}
+.text-1 {color: #2D2D34;}
+.text-2 {color: #EB5160;}
+.text-3 {color: #4C86A8;}
+.text-4 {color: #F2AF29;}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+}
+
+.intro-img {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.section-content {
+    padding: 100px 0;
+}
+
+.socials {
+    margin: 40px 60px;
+}
+
+.btn-xl {
+    padding: 12px 20px;
+    font-size: 30px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
