@@ -1,9 +1,31 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { withPrefix } from 'gatsby';
+import Helmet from 'react-helmet';
 
 const Projects = () => {
 	return (
 		<div className={'root'}>
+			<Helmet>
+				{/*<link rel={withPrefix('css/bootstrap.min.css')} type={'stylesheet'} />*/}
+				{/*<link rel={withPrefix('css/index.css')} type={'stylesheet'} />*/}
+				<script
+					src={withPrefix('js/bootstrap.min.js')}
+					type={'stylesheet'}
+				/>
+				<script
+					src={withPrefix('js/jquery-3.5.1.min.js')}
+					type={'stylesheet'}
+				/>
+				<script
+					src={withPrefix('js/popper.min.js')}
+					type={'stylesheet'}
+				/>
+				<script
+					src={withPrefix('js/typed.min.js')}
+					type={'stylesheet'}
+				/>
+			</Helmet>
 			<Navbar />
 			<header className='masthead bg-3'>
 				<div className='container h-100'>
@@ -60,7 +82,7 @@ const Projects = () => {
 							</div>
 							<ul className='list-group list-group-flush'>
 								<li className='list-group-item list-group-item-dark'>
-									React, React-Router
+									React, React-Router, React-Helmet
 								</li>
 								<li className='list-group-item list-group-item-dark'>
 									Gatsby

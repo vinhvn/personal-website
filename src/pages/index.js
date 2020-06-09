@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
+import Helmet from 'react-helmet';
 import Typed from 'typed.js';
 import Navbar from '../components/Navbar';
 
@@ -33,6 +34,26 @@ class App extends Component {
 	render() {
 		return (
 			<div className='root'>
+				<Helmet>
+					{/*<link rel={withPrefix('css/bootstrap.min.css')} type={'stylesheet'} />*/}
+					{/*<link rel={withPrefix('css/index.css')} type={'stylesheet'} />*/}
+					<script
+						src={withPrefix('js/bootstrap.min.js')}
+						type={'stylesheet'}
+					/>
+					<script
+						src={withPrefix('js/jquery-3.5.1.min.js')}
+						type={'stylesheet'}
+					/>
+					<script
+						src={withPrefix('js/popper.min.js')}
+						type={'stylesheet'}
+					/>
+					<script
+						src={withPrefix('js/typed.min.js')}
+						type={'stylesheet'}
+					/>
+				</Helmet>
 				<Navbar />
 				<header className='masthead bg-2'>
 					<div className='container h-100'>

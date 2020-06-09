@@ -16,8 +16,6 @@ export default function HTML(props) {
 					content="Vinh Nguyen's Personal Website"
 				/>
 				{props.headComponents}
-				<link rel='stylesheet' href='css/bootstrap.min.css' />
-				<link rel='stylesheet' href='css/index.css' />
 				<title>Vinh Nguyen</title>
 			</head>
 			<body {...props.bodyAttributes}>
@@ -28,10 +26,6 @@ export default function HTML(props) {
 					dangerouslySetInnerHTML={{ __html: props.body }}
 				/>
 				{props.postBodyComponents}
-				<script src='js/jquery-3.5.1.min.js' />
-				<script src='js/popper.min.js' />
-				<script src='js/bootstrap.min.js' />
-				<script src='js/typed.min.js' />
 			</body>
 		</html>
 	);
