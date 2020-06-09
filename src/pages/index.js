@@ -37,6 +37,13 @@ class App extends Component {
 				<Helmet>
 					{/*<link rel={withPrefix('css/bootstrap.min.css')} type={'stylesheet'} />*/}
 					{/*<link rel={withPrefix('css/index.css')} type={'stylesheet'} />*/}
+					<meta
+						property='og:image'
+						content={withPrefix('img/website.png')}
+					/>
+					<meta property='og:image:type' content='image/png' />
+					<meta property='og:image:width' content='1204' />
+					<meta property='og:image:height' content='894' />
 					<script
 						src={withPrefix('js/bootstrap.min.js')}
 						type={'stylesheet'}
