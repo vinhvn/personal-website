@@ -11,8 +11,8 @@ class App extends Component {
 				'a programmer',
 				'a student',
 				'always learning',
-				'playing my bass',
-				'practicing japanese',
+				'playing bass',
+				'learning japanese',
 				'making games',
 				'designing websites',
 			],
@@ -44,15 +44,21 @@ class App extends Component {
 									src='/img/me.jpg'
 									alt='me'
 								/>
-								<h4 className={'text-light'}>
+								<h1
+									className={'text-light'}
+									style={{ 'font-size': '3.4vh' }}
+								>
 									Hi, I'm{' '}
 									<span
 										ref={elem => {
 											this.elem = elem;
 										}}
 									/>
-								</h4>
-								<p className={'lead text-light'}>
+								</h1>
+								<p
+									className={'lead text-light'}
+									style={{ 'font-size': '3vh' }}
+								>
 									Welcome to my website!
 								</p>
 							</div>

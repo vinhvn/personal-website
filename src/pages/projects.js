@@ -12,9 +12,14 @@ const Projects = () => {
 						<div className='col-12 text-center'>
 							<i
 								className={'text-light fa fa-heart'}
-								style={{ 'font-size': '15vw' }}
+								style={{ 'font-size': '15vh' }}
 							/>
-							<h1 className={'text-light'}>Projects</h1>
+							<h1
+								className={'text-light'}
+								style={{ 'font-size': '10vh' }}
+							>
+								Projects
+							</h1>
 						</div>
 					</div>
 				</div>
