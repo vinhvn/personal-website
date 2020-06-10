@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { withPrefix } from 'gatsby';
 
 export default function HTML(props) {
 	return (
@@ -15,6 +17,10 @@ export default function HTML(props) {
 					name='description'
 					content="Vinh Nguyen's Personal Website"
 				/>
+				<meta property='og:image' content={'img/website.png'} />
+				<meta property='og:image:type' content='image/png' />
+				<meta property='og:image:width' content='1204' />
+				<meta property='og:image:height' content='894' />
 				{props.headComponents}
 				<title>Vinh Nguyen</title>
 			</head>
@@ -26,6 +32,22 @@ export default function HTML(props) {
 					dangerouslySetInnerHTML={{ __html: props.body }}
 				/>
 				{props.postBodyComponents}
+				<script
+					src={withPrefix('js/jquery-3.5.1.min.js')}
+					type={'text/javascript'}
+				/>
+				<script
+					src={withPrefix('js/popper.min.js')}
+					type={'text/javascript'}
+				/>
+				<script
+					src={withPrefix('js/bootstrap.min.js')}
+					type={'text/javascript'}
+				/>
+				<script
+					src={withPrefix('js/typed.min.js')}
+					type={'text/javascript'}
+				/>
 			</body>
 		</html>
 	);
