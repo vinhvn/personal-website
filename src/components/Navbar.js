@@ -12,18 +12,15 @@ const Navbar = () => {
 					className='navbar-toggler'
 					type='button'
 					data-toggle='collapse'
-					data-target='#navbarSupportedContent'
-					aria-controls='navbarSupportedContent'
+					data-target='#mobileNav'
+					aria-controls='mobileNav'
 					aria-expanded='false'
 					aria-label='Toggle navigation'
 				>
 					<span className='navbar-toggler-icon' />
 				</button>
-				<div
-					className='collapse navbar-collapse'
-					id='navbarSupportedContent'
-				>
-					<ul className='navbar-nav ml-auto'>
+				<div className='collapse navbar-collapse' id='mobileNav'>
+					<ul className='navbar-nav mr-auto'>
 						<li className='nav-item'>
 							<Link to={'/'} className={'nav-link'}>
 								Home

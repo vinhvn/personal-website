@@ -30,11 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-content {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .socials {
-    margin: 40px 60px;
+    margin: 15px 30px;
 }
 
 .btn-xl {

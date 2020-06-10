@@ -1,58 +1,29 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { withPrefix } from 'gatsby';
-import Helmet from 'react-helmet';
 
 const Projects = () => {
 	return (
 		<div className={'root'}>
-			<Helmet>
-				{/*<link rel={withPrefix('css/bootstrap.min.css')} type={'stylesheet'} />*/}
-				{/*<link rel={withPrefix('css/index.css')} type={'stylesheet'} />*/}
-				<meta
-					property='og:image'
-					content={withPrefix('img/website.png')}
-				/>
-				<meta property='og:image:type' content='image/png' />
-				<meta property='og:image:width' content='1204' />
-				<meta property='og:image:height' content='894' />
-				<script
-					src={withPrefix('js/bootstrap.min.js')}
-					type={'stylesheet'}
-				/>
-				<script
-					src={withPrefix('js/jquery-3.5.1.min.js')}
-					type={'stylesheet'}
-				/>
-				<script
-					src={withPrefix('js/popper.min.js')}
-					type={'stylesheet'}
-				/>
-				<script
-					src={withPrefix('js/typed.min.js')}
-					type={'stylesheet'}
-				/>
-			</Helmet>
 			<Navbar />
+
 			<header className='masthead bg-3'>
 				<div className='container h-100'>
 					<div className='row h-100 align-items-center'>
 						<div className='col-12 text-center'>
-							<h1
-								className={'text-light'}
-								style={{ 'font-size': '10em' }}
-							>
-								<i className={'fa fa-heart'} /> Projects
-							</h1>
+							<i
+								className={'text-light fa fa-heart'}
+								style={{ 'font-size': '15vw' }}
+							/>
+							<h1 className={'text-light'}>Projects</h1>
 						</div>
 					</div>
 				</div>
 			</header>
 
-			<section className='page-section about bg-1'>
+			<section className='page-section bg-1'>
 				<div className='container section-content'>
 					<div className='row'>
-						<div className='col-lg ml-auto'>
+						<div className='col-lg mx-auto'>
 							<h2 className='section-header text-light'>
 								vinhnguyen.ca
 							</h2>
@@ -80,26 +51,23 @@ const Projects = () => {
 								</li>
 							</ul>
 							<hr className={'divider'} />
-							<p className={'lead text-light text-justify'}>
-								My personal portfolio website to show off my
-								love of design.
+							<p className={'lead text-light'}>
+								My personal portfolio website, created to show
+								my love of design
 							</p>
 							<div className='card-header text-light bg-1'>
 								Implemented using...
 							</div>
 							<ul className='list-group list-group-flush'>
 								<li className='list-group-item list-group-item-dark'>
-									React, React-Router, React-Helmet
+									React
 								</li>
 								<li className='list-group-item list-group-item-dark'>
 									Gatsby
 								</li>
-								<li className='list-group-item list-group-item-dark'>
-									Bootstrap
-								</li>
 							</ul>
 						</div>
-						<div className='col-lg mr-auto'>
+						<div className='col-lg mx-auto mt-4'>
 							<img
 								src='/img/website.png'
 								alt='carleton'
@@ -110,14 +78,13 @@ const Projects = () => {
 				</div>
 			</section>
 
-			<section className='page-section about bg-light'>
+			<section className='page-section bg-light'>
 				<div className='container section-content'>
 					<div className='row'>
-						<div className='col-lg ml-auto'>
+						<div className='col-lg mx-auto'>
 							<h2 className='section-header text-dark'>
 								devCloud
 							</h2>
-
 							<hr className={'divider'} />
 							<ul className='list-inline'>
 								<li className='list-inline-item'>
@@ -142,7 +109,7 @@ const Projects = () => {
 								</li>
 							</ul>
 							<hr className={'divider'} />
-							<p className={'lead text-dark text-justify'}>
+							<p className={'lead text-dark'}>
 								A small website where users can register and
 								login to post and share their own projects with
 								others.
@@ -152,18 +119,21 @@ const Projects = () => {
 							</div>
 							<ul className='list-group list-group-flush'>
 								<li className='list-group-item list-group-item-light'>
-									React, React-Router, Redux
+									React, React-Router
+								</li>
+								<li className='list-group-item list-group-item-light'>
+									Redux, Redux-Thunk
 								</li>
 								<li className='list-group-item list-group-item-light'>
 									Firebase Auth, Firestore, and Cloud
 									Functions
 								</li>
 								<li className='list-group-item list-group-item-light'>
-									Moment, Materialize CSS
+									Moment
 								</li>
 							</ul>
 						</div>
-						<div className='col-lg mr-auto'>
+						<div className='col-lg mx-auto mt-4'>
 							<img
 								src='/img/devcloud.png'
 								alt='carleton'
@@ -174,11 +144,13 @@ const Projects = () => {
 				</div>
 			</section>
 
-			<section className='page-section about bg-1'>
+			<section className='page-section bg-1'>
 				<div className='container section-content'>
 					<div className='row'>
-						<div className='col-lg ml-auto'>
-							<h2 className='section-header text-light'>Todo</h2>
+						<div className='col-lg mx-auto'>
+							<h2 className='section-header text-light'>
+								{'Todo'}
+							</h2>
 							<hr className={'divider'} />
 							<ul className='list-inline'>
 								<li className='list-inline-item'>
@@ -203,9 +175,9 @@ const Projects = () => {
 								</li>
 							</ul>
 							<hr className={'divider'} />
-							<p className={'lead text-light text-justify'}>
-								A super simple todo app to learn react and
-								single page applications.
+							<p className={'lead text-light'}>
+								A super simple "todo-list" app to learn React
+								and how single page applications function.
 							</p>
 							<div className='card-header text-light bg-1'>
 								Implemented using...
@@ -214,12 +186,9 @@ const Projects = () => {
 								<li className='list-group-item list-group-item-dark'>
 									React
 								</li>
-								<li className='list-group-item list-group-item-dark'>
-									Materialize CSS
-								</li>
 							</ul>
 						</div>
-						<div className='col-lg mr-auto'>
+						<div className='col-lg mx-auto mt-4'>
 							<img
 								src='/img/todo.png'
 								alt='carleton'

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withPrefix } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Link } from 'gatsby';
 import Typed from 'typed.js';
 import Navbar from '../components/Navbar';
 
@@ -12,7 +11,7 @@ class App extends Component {
 				'a programmer',
 				'a student',
 				'always learning',
-				'playing bass guitar',
+				'playing my bass',
 				'practicing japanese',
 				'making games',
 				'designing websites',
@@ -34,34 +33,8 @@ class App extends Component {
 	render() {
 		return (
 			<div className='root'>
-				<Helmet>
-					{/*<link rel={withPrefix('css/bootstrap.min.css')} type={'stylesheet'} />*/}
-					{/*<link rel={withPrefix('css/index.css')} type={'stylesheet'} />*/}
-					<meta
-						property='og:image'
-						content={withPrefix('img/website.png')}
-					/>
-					<meta property='og:image:type' content='image/png' />
-					<meta property='og:image:width' content='1204' />
-					<meta property='og:image:height' content='894' />
-					<script
-						src={withPrefix('js/bootstrap.min.js')}
-						type={'stylesheet'}
-					/>
-					<script
-						src={withPrefix('js/jquery-3.5.1.min.js')}
-						type={'stylesheet'}
-					/>
-					<script
-						src={withPrefix('js/popper.min.js')}
-						type={'stylesheet'}
-					/>
-					<script
-						src={withPrefix('js/typed.min.js')}
-						type={'stylesheet'}
-					/>
-				</Helmet>
 				<Navbar />
+
 				<header className='masthead bg-2'>
 					<div className='container h-100'>
 						<div className='row h-100 align-items-center'>
@@ -71,21 +44,15 @@ class App extends Component {
 									src='/img/me.jpg'
 									alt='me'
 								/>
-								<h1
-									className={'text-light'}
-									style={{ 'font-size': '4em' }}
-								>
+								<h4 className={'text-light'}>
 									Hi, I'm{' '}
 									<span
 										ref={elem => {
 											this.elem = elem;
 										}}
 									/>
-								</h1>
-								<p
-									className={'lead text-light'}
-									style={{ 'font-size': '2em' }}
-								>
+								</h4>
+								<p className={'lead text-light'}>
 									Welcome to my website!
 								</p>
 							</div>
@@ -93,25 +60,26 @@ class App extends Component {
 					</div>
 				</header>
 
-				<section id={'about'} className='page-section about bg-3'>
+				<section id={'about'} className='page-section bg-3'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg ml-auto'>
+							<div className='col-lg mx-auto'>
 								<h2 className='section-header text-light'>
 									<i className='fa fa-hand-o-right' /> About
 									Me
 								</h2>
 								<hr className={'divider'} />
-								<p className={'lead text-light text-justify'}>
+								<p className={'lead text-light'}>
 									Hi, I'm Vinh Nguyen! I'm an aspiring
 									software developer currently pursuing a a
 									Computer Science degree at Carleton
-									University. I enjoy web, front-end
-									development and spend most of my free time
-									practicing and learning new things.
+									University. I enjoy web development,
+									especially on the front-end and spend most
+									of my free time making fun little apps and
+									learning new technologies.
 								</p>
 							</div>
-							<div className='col-lg mr-auto'>
+							<div className='col-lg mx-auto'>
 								<ul className='list-inline d-flex justify-content-around socials'>
 									<li className='list-inline-item'>
 										<a
@@ -181,46 +149,65 @@ class App extends Component {
 					</div>
 				</section>
 
-				<section id={'experience'} className='page-section about bg-4'>
+				<section id={'experience'} className='page-section bg-4'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg mr-auto text-center'>
+							<div className='col-lg mx-auto'>
+								<h2 className='section-header text-dark'>
+									<i className='fa fa-map-marker' /> Fall 2020
+								</h2>
+								<hr className={'divider'} />
+								<p className={'lead text-dark'}>
+									I will be doing an internship as a Software
+									Developer focused on Web Development at{' '}
+									<a
+										href={'https://workshopx.com/'}
+										className={
+											'font-weight-bold text-dark text-decoration-none'
+										}
+									>
+										Workshop X / CanvasPop
+									</a>{' '}
+									this coming fall.
+								</p>
+							</div>
+							<div className='col-lg mx-auto mt-4 text-center'>
 								<img
 									src='/img/workshopx.png'
 									alt='carleton'
 									className={'img-fluid'}
 								/>
 							</div>
-							<div className='col-lg ml-auto'>
-								<h2 className='section-header text-dark text-right'>
-									Fall 2020{' '}
-									<i className='fa fa-paint-brush' />
-								</h2>
-								<hr className={'divider'} />
-								<p className={'lead text-dark text-justify'}>
-									I will be doing a software development
-									internship at WorkshopX this coming fall.
-								</p>
-							</div>
 						</div>
 					</div>
 				</section>
 
-				<section className='page-section about bg-2'>
+				<section className='page-section bg-2'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg ml-auto'>
+							<div className='col-lg mx-auto'>
 								<h2 className='section-header text-light'>
-									<i className='fa fa-code' /> Summer 2020
+									<i className='fa fa-map-marker' /> Summer
+									2020
 								</h2>
 								<hr className={'divider'} />
-								<p className={'lead text-light text-justify'}>
+								<p className={'lead text-light'}>
 									I will be working as a software developer
-									intern at Canadian Food Inspection Agency
+									CO-OP intern at{' '}
+									<a
+										href={
+											'https://https://www.inspection.gc.ca/eng/1297964599443/1297965645317/'
+										}
+										className={
+											'font-weight-bold text-light text-decoration-none'
+										}
+									>
+										Canadian Food Inspection Agency
+									</a>{' '}
 									this summer.
 								</p>
 							</div>
-							<div className='col-lg mr-auto'>
+							<div className='col-lg mx-auto mt-4'>
 								<img
 									src='/img/cfia.jpg'
 									alt='carleton'
@@ -231,47 +218,49 @@ class App extends Component {
 					</div>
 				</section>
 
-				<section className='page-section about bg-3'>
+				<section className='page-section bg-3'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg ml-auto'>
+							<div className='col-lg mx-auto'>
+								<h2 className='section-header text-light'>
+									<i className='fa fa-map-marker' /> Fall 2019
+								</h2>
+								<h2 className='section-header text-light'>
+									& Winter 2020
+								</h2>
+								<hr className={'divider'} />
+								<p className={'lead text-light'}>
+									I worked as a Computer Science Teaching
+									Assistant at Carleton University whilst
+									continuing my studies. I marked student
+									assignments and midterms, and provided
+									after-class help during office hours. I held
+									workshops to assist students with completing
+									assignments and developed a problem which
+									was used in the final exam.
+								</p>
+							</div>
+							<div className='col-lg mx-auto mt-4'>
 								<img
 									src='/img/scs-carleton.png'
 									alt='carleton'
 									className={'img-fluid'}
 								/>
 							</div>
-							<div className='col-lg mr-auto'>
-								<h2 className='section-header text-light text-right'>
-									Fall 2019 & Winter 2020{' '}
-									<i className='fa fa-pencil' />
-								</h2>
-								<hr className={'divider'} />
-								<p className={'lead text-light text-justify'}>
-									I worked as a Computer Science Teaching
-									Assistant at Carleton University whilst
-									continuing my studies as a student. I marked
-									student assignments and midterms, and
-									provided after-class help during office
-									hours. I developed a problem which was used
-									in the final exam and held workshops to
-									assist students with completing assignments.
-								</p>
-							</div>
 						</div>
 					</div>
 				</section>
 
-				<section id={'academics'} className='page-section about bg-4'>
+				<section id={'academics'} className='page-section bg-4'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg mr-auto'>
+							<div className='col-lg mx-auto'>
 								<h2 className='section-header text-dark'>
 									<i className='fa fa-graduation-cap' />{' '}
 									Academics
 								</h2>
 								<hr className={'divider'} />
-								<p className={'lead text-dark text-justify'}>
+								<p className={'lead text-dark'}>
 									I am currently a third-year undergraduate,
 									pursuing a Bachelor's in Computer Science at
 									Carleton University in Ottawa, Canada.
@@ -294,7 +283,7 @@ class App extends Component {
 									</li>
 								</ul>
 							</div>
-							<div className='col-lg ml-auto'>
+							<div className='col-lg mx-auto mt-4'>
 								<img
 									src='/img/carleton.png'
 									alt='carleton'
@@ -305,18 +294,19 @@ class App extends Component {
 					</div>
 				</section>
 
-				<section className='page-section about bg-2'>
+				<section className='page-section bg-2'>
 					<div className='container section-content'>
 						<div className='row'>
-							<div className='col-lg mr-auto'>
+							<div className='col-lg mx-auto'>
 								<h2 className='section-header text-light'>
 									<i className='fa fa-laptop' /> Projects
 								</h2>
 								<hr className={'divider'} />
-								<p className={'lead text-light text-justify'}>
+								<p className={'lead text-light'}>
 									I have a bunch of cool projects I've worked
 									on during school, hackathons, and whenever I
 									have the spare time. <br />
+									<br />
 									Feel free to check them out{' '}
 									<Link
 										to={'/projects'}
