@@ -48,6 +48,14 @@ export default function HTML(props) {
 					src={withPrefix('js/typed.min.js')}
 					type={'text/javascript'}
 				/>
+				<script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=UA-165195365-3'
+				/>
+				<script
+					src={withPrefix('js/gtag.js')}
+					type={'text/javascript'}
+				/>
 			</body>
 		</html>
 	);
