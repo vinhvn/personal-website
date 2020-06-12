@@ -188,42 +188,6 @@ class App extends Component {
 					</div>
 				</section>
 
-				<section className='page-section bg-2'>
-					<div className='container section-content'>
-						<div className='row'>
-							<div className='col-lg mx-auto'>
-								<h2 className='section-header text-light'>
-									<i className='fa fa-map-marker' /> Summer
-									2020
-								</h2>
-								<hr className={'divider'} />
-								<p className={'lead text-light'}>
-									I will be working as a software developer
-									CO-OP intern at{' '}
-									<a
-										href={
-											'https://https://www.inspection.gc.ca/eng/1297964599443/1297965645317/'
-										}
-										className={
-											'font-weight-bold text-light text-decoration-none'
-										}
-									>
-										Canadian Food Inspection Agency
-									</a>{' '}
-									this summer.
-								</p>
-							</div>
-							<div className='col-lg mx-auto mt-4'>
-								<img
-									src='/img/cfia.jpg'
-									alt='carleton'
-									className={'img-fluid'}
-								/>
-							</div>
-						</div>
-					</div>
-				</section>
-
 				<section className='page-section bg-3'>
 					<div className='container section-content'>
 						<div className='row'>
