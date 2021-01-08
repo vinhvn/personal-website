@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import Cards from './components/Cards';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Switch as SwitchRouter, Route, Redirect } from 'react-router-dom';
 import Switch from 'react-switch';
+import Navbar from './components/Navbar';
+import AboutCards from './components/Decks/AboutCards';
+import ExperienceCards from './components/Decks/ExperienceCards';
+import ProjectCards from './components/Decks/ProjectCards';
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -16,16 +19,31 @@ function App() {
   }
 
   return (
-    <div className="mx-auto container flex flex-col h-full">
-      <Navbar />
-      <Cards />
-      <div className="flex justify-center py-4 dark:bg-gray-900">
-        <label className="flex flex-col items-center justify-center">
-          <span className="text-xl font-serif font-bold pb-2 dark:text-white">Toggle Dark Mode</span>
-          <Switch onChange={toggleDarkMode} checked={dark} />
-        </label>
+    <BrowserRouter>
+      <div className="mx-auto container flex flex-col h-full">
+        <Navbar />
+        <SwitchRouter>
+          <Route path="/about">
+            <AboutCards />
+          </Route>
+          <Route path="/experience">
+            <ExperienceCards />
+          </Route>
+          <Route path="/projects">
+            <ProjectCards />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/about" />
+          </Route>
+        </SwitchRouter>
+        <div className="flex justify-center py-4 dark:bg-gray-900">
+          <label className="flex flex-col items-center justify-center">
+            <span className="text-xl font-serif font-bold pb-2 dark:text-white">Toggle Dark Mode</span>
+            <Switch onChange={toggleDarkMode} checked={dark} />
+          </label>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
