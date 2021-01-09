@@ -36,7 +36,7 @@ function App() {
             <Redirect to="/about" />
           </Route>
         </SwitchRouter>
-        <div className="flex justify-center py-4 dark:bg-gray-900">
+        <div className="flex justify-center py-4 pb-8 dark:bg-gray-900">
           <label className="flex flex-col items-center justify-center">
             <span className="text-xl font-serif font-bold pb-2 dark:text-white">Toggle Dark Mode</span>
             <Switch onChange={toggleDarkMode} checked={dark} />

@@ -28,7 +28,7 @@ export default class ExperienceCards extends React.Component {
               <span className="pb-2">This card is the last one in the deck. Thanks for checking this deck out!</span>
               <span>Feel free to also take a look at my <RouterLink to="/about" className="text-red-500 font-bold transition-colors hover:text-gray-500">about me deck</RouterLink> or my <RouterLink to="/projects" className="text-red-500 font-bold transition-colors hover:text-gray-500">projects deck.</RouterLink></span>
             </div>
-            <div className="flex flex-row font-bold text-xs animate-pulse">
+            <div className="flex flex-row font-semibold text-xs animate-pulse">
               <span>Swipe me in any direction to refresh the deck!</span>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default class ExperienceCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 py-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <span className="text-3xl font-bold font-serif pb-8">Carleton University</span>
             <div className="flex flex-row justify-evenly items-center">
-              <div className="flex w-24">
+              <div className="flex w-16">
                 <img className="object-contain rounded-lg" src="/img/carletonu.jpg" alt="carletonu" />
               </div>
               <div className="flex flex-col justify-between pl-2 h-28 text-md">
@@ -51,7 +51,7 @@ export default class ExperienceCards extends React.Component {
                 <a href="https://carleton.ca/scs" className="flex flex-row items-center transition-colors hover:text-red-500"><Link className="mr-2" size={16} color="currentColor" />carleton.ca/scs</a>
               </div>
             </div>
-            <div className="flex flex-col justify-center h-full text-md">
+            <div className="flex flex-col justify-center h-full text-sm">
               <span className="text-lg font-serif font-bold pb-2">What I did</span>
               <span>Headed assignment <span className="text-red-500 font-bold">workshops</span> and held <span className="text-red-500 font-bold">office hours</span> to help students with any problems they encountered. Graded assignments and midterms as well.</span>
               <span className="pt-2">For more info, check my <a href="/resume_2021.pdf" className="text-red-500 font-bold transition-colors hover:text-gray-500">resume.</a></span>
@@ -71,7 +71,7 @@ export default class ExperienceCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 py-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <span className="text-4xl font-bold font-serif pb-8">Creative Layer</span>
             <div className="flex flex-row justify-evenly items-center">
-              <div className="flex w-24">
+              <div className="flex w-16">
                 <img className="object-contain rounded-lg" src="/img/creativelayer.png" alt="creativelayer" />
               </div>
               <div className="flex flex-col justify-between h-28 pl-2 text-md">
@@ -81,8 +81,8 @@ export default class ExperienceCards extends React.Component {
                 <a href="https://creativelayer.com" className="flex flex-row items-center transition-colors hover:text-red-500"><Link className="mr-2" size={16} color="currentColor" />creativelayer.com</a>
               </div>
             </div>
-            <div className="flex flex-col justify-center h-full text-md">
-              <span className="text-lg font-serif font-bold pb-2">What I'm doing</span>
+            <div className="flex flex-col justify-center h-full text-sm">
+              <span className="text-lg font-serif font-bold py-2">What I'm doing</span>
               <span>Worked in a <span className="text-red-500 font-bold">startup</span> environment, building <span className="text-red-500 font-bold">Vue</span> web apps for clients to use Creative Layer real-time image preview software.</span>
               <span className="pt-2">For more info, check my <a href="/resume_2021.pdf" className="text-red-500 font-bold transition-colors hover:text-gray-500">resume.</a></span>
             </div>
@@ -107,13 +107,13 @@ export default class ExperienceCards extends React.Component {
         key={this.state.numCards}
         children={
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
-            <span className="text-4xl font-bold font-serif pb-10">Experience</span>
-            <span className="text-8xl pb-8">👷</span>
+            <span className="text-4xl font-bold font-serif pb-8">Experience</span>
+            <span className="text-6xl pb-6">👷</span>
             <div className="flex flex-col justify-evenly h-full text-md">
               <span>Welcome to my <span className="text-red-500 font-bold">experiences</span> deck! Here, you can find my current job and all of my previous experiences and jobs.</span>
               <span>Need more info? Feel free to take a look at my <a href="/resume_2021.pdf" className="text-red-500 font-bold transition-colors hover:text-gray-500">resume</a> or contact me <a href="mailto:vinhh.nguyen@carleton.ca" className="text-red-500 font-bold transition-colors hover:text-gray-500">directly.</a></span>
             </div>
-            <div className="flex flex-row font-bold text-xs animate-pulse">
+            <div className="flex flex-row font-semibold text-xs animate-pulse">
               <span>Swipe me in any direction to get the next card!</span>
             </div>
           </div>

@@ -28,7 +28,7 @@ export default class ProjectCards extends React.Component {
               <span className="pb-2">This card is the last one in the deck. Thanks for checking this deck out!</span>
               <span>Feel free to also take a look at my <RouterLink to="/about" className="text-red-500 font-bold transition-colors hover:text-gray-500">about me deck</RouterLink> or my <RouterLink to="/experience" className="text-red-500 font-bold transition-colors hover:text-gray-500">experiences deck.</RouterLink></span>
             </div>
-            <div className="flex flex-row font-bold text-xs animate-pulse">
+            <div className="flex flex-row font-semibold text-xs animate-pulse">
               <span>Swipe me in any direction to refresh the deck!</span>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default class ProjectCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <div className="flex flex-col">
               <span className="text-4xl font-bold font-serif pb-6">1InTheSocket</span>
-              <div className="flex">
+              <div className="flex h-32">
                 <img className="object-contain rounded-lg" src="/img/1inthesocket.gif" alt="preview" />
               </div>
             </div>
@@ -70,7 +70,7 @@ export default class ProjectCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <div className="flex flex-col">
               <span className="text-3xl font-bold font-serif pb-8">Tabulizer</span>
-              <span className="text-8xl">🎸</span>
+              <span className="text-6xl">🎸</span>
             </div>
             <div className="flex flex-col justify-evenly h-full text-md py-10">
               <span>A mobile app to view guitar tabs</span>
@@ -81,7 +81,7 @@ export default class ProjectCards extends React.Component {
             </div>
             <span className="text-lg font-serif font-bold pb-2">Technologies</span>
             <div className="flex flex-row">
-            <img className="mr-2" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/javascript.svg" alt="JavaScript" width="21px" height="21px" />
+              <img className="mr-2" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/javascript.svg" alt="JavaScript" width="21px" height="21px" />
               <img className="mr-2" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/react.svg" alt="React" width="21px" height="21px" />
               <img className="mr-2" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/expo.svg" alt="Expo" width="21px" height="21px" />
             </div>
@@ -95,7 +95,7 @@ export default class ProjectCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <div className="flex flex-col">
               <span className="text-3xl font-bold font-serif pb-6">Booklyn 99</span>
-              <div className="flex">
+              <div className="flex h-32">
                 <img className="object-contain rounded-lg" src="/img/booklyn99.jpg" alt="preview" />
               </div>
             </div>
@@ -123,7 +123,7 @@ export default class ProjectCards extends React.Component {
         children={
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <div className="flex flex-col">
-              <span className="text-3xl font-bold font-serif pb-6">Heroes, Monsters, & Dragons 🐉</span>
+              <span className="text-2xl font-bold font-serif pb-6">Heroes, Monsters, & Dragons 🐉</span>
               <div className="flex">
                 <img className="object-contain rounded-lg" src="/img/hmad.gif" alt="preview" />
               </div>
@@ -148,7 +148,7 @@ export default class ProjectCards extends React.Component {
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
             <div className="flex flex-col">
               <span className="text-4xl font-bold font-serif pb-6">Sundial ☀️</span>
-              <div className="flex w-32 ml-2">
+              <div className="flex w-24 ml-2">
                 <img className="object-contain rounded-lg" src="/img/sundial.png" alt="preview" />
               </div>
             </div>
@@ -178,13 +178,13 @@ export default class ProjectCards extends React.Component {
         key={this.state.numCards}
         children={
           <div className="relative flex flex-col justify-between border shadow-lg rounded-lg p-6 pt-10 w-card h-card bg-white dark:bg-gray-800 dark:text-white dark:border-gray-700">
-            <span className="text-4xl font-bold font-serif pb-10">Projects</span>
-            <span className="text-8xl pb-8">☕</span>
+            <span className="text-4xl font-bold font-serif pb-8">Projects</span>
+            <span className="text-6xl pb-6">☕</span>
             <div className="flex flex-col justify-evenly h-full text-md">
               <span>Welcome to my <span className="text-red-500 font-bold">projects</span> deck! Here, you can find most of my side projects and any other cool things I've made.</span>
               <span>Need more info? Feel free to take a look at my <a href="https://github.com/vinhvn" className="text-red-500 font-bold transition-colors hover:text-gray-500">github</a> or contact me <a href="mailto:vinhh.nguyen@carleton.ca" className="text-red-500 font-bold transition-colors hover:text-gray-500">directly.</a></span>
             </div>
-            <div className="flex flex-row font-bold text-xs animate-pulse">
+            <div className="flex flex-row font-semibold text-xs animate-pulse">
               <span>Swipe me in any direction to get the next card!</span>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default class ProjectCards extends React.Component {
 
   render() {
     return (
-      <div className="flex flex-shrink-0 w-full h-cardContainer items-center justify-center dark:bg-gray-900">
+      <div className="flex w-full h-cardContainer items-center justify-center dark:bg-gray-900">
         {this.state.cards}
       </div>
     )
