@@ -1,32 +1,42 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { NextPage } from 'next';
-import Layout from '../components/Layout';
+import Image from 'next/image';
+
+import Layout from '@/components/Layout';
+import avatar from '@/assets/avatar.jpg';
 
 const IndexPage: NextPage = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const handleToggleDarkMode = () => setDarkMode(!darkMode);
+
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      <div className="absolute inset-0 w-full h-screen flex flex-col justify-center items-center">
-        <h1 className="text-5xl font-semibold tracking-wide">👋 Hello Next.js</h1>
-        <div className="pt-8 text-xl space-x-4">
-          <span>Learn</span>
-          <a
-            className="text-red-500 hover:text-red-700"
-            href="https://reactjs.org/docs/getting-started.html"
-          >
-            React
-          </a>
-          <a className="text-yellow-500 hover:text-yellow-700" href="https://nextjs.org/docs">
-            Next.js
-          </a>
-          <a className="text-green-500 hover:text-green-700" href="https://tailwindcss.com/docs">
-            Tailwind
-          </a>
-          <a
-            className="text-blue-500 hover:text-blue-700"
-            href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
-          >
-            TypeScript
-          </a>
+    <Layout title="Vincent Nguyen">
+      <style jsx global>
+        {`
+          body {
+            background-color: ${darkMode ? '#111827' : 'white'};
+          }
+        `}
+      </style>
+      <div className="max-w-screen-md mx-auto p-4 sm:p-8">
+        <div id="biography" className="mt-4 sm:mt-12">
+          <div id="header">
+            <Image
+              src={avatar}
+              alt="Avatar"
+              width={96}
+              height={96}
+              placeholder="blur"
+              className="rounded-full"
+            />
+            <h1 className="text-4xl font-bold">
+              <span className="block sm:inline">Hi, I&apos;m </span>
+              <span className="block sm:inline">Vincent Nguyen.</span>
+            </h1>
+            <p>Body</p>
+          </div>
+          <div id="footer">Links</div>
         </div>
       </div>
     </Layout>
