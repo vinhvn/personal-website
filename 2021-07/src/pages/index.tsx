@@ -3,18 +3,8 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import Toggle from 'react-toggle';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faAt,
-  faCoffee,
-  faLink,
-  faScroll,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faFigma,
-  faGithub,
-  faLinkedin,
-  faSpotify,
-} from '@fortawesome/free-brands-svg-icons';
+import { faAt, faLink, faScroll } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '@/components/Layout';
 import avatar from '@/assets/avatar.jpg';
