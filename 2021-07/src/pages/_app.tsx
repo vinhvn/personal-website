@@ -1,8 +1,8 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 
-import 'react-toggle/style.css';
 import '../styles/index.css';
+import '../styles/toggle.css';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return <Component {...pageProps} />;
