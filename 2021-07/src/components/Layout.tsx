@@ -3,14 +3,16 @@ import Head from 'next/head';
 
 type Props = {
   title?: string;
+  dark?: boolean;
   children?: React.ReactNode;
 };
 
 const Layout: React.FunctionComponent<Props> = ({
   title = 'This is the default title',
+  dark,
   children,
 }) => (
-  <div>
+  <div className={dark ? 'dark' : ''}>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
