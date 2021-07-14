@@ -40,9 +40,10 @@ const IndexPage: NextPage = () => {
         className="max-w-screen-md mx-auto p-4 sm:p-8 mt-4 sm:mt-12 lg:mt-24 mb-8 sm:mb-16 xl:fixed xl:top-0 xl:left-0 xl:mx-0 xl:pt-12 xl:ml-24 xl:w-2/5 xl:max-w-none xl:flex xl:flex-col xl:justify-between xl:h-5/6"
       >
         <div id="header" className="mb-8">
-          <h1 className="text-4xl xl:text-6xl font-bold mb-4 text-gray-900 dark:text-gray-100 space-y-2">
-            <span className="block">Hi! 👋</span>
-            <span className="block">I&apos;m Vincent.</span>
+          <h1 className="text-4xl xl:text-6xl font-bold mb-4 xl:mb-12 text-gray-900 dark:text-gray-100 space-y-2 xl:space-y-4">
+            <p>Hi! 👋</p>
+            <p>I&apos;m Vincent.</p>
+            <p className="text-2xl xl:text-3xl">🏳️‍🌈 (he/they)</p>
           </h1>
           <div
             id="body"

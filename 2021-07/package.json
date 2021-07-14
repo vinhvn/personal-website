@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "stage": "yarn build; yarn start",
+    "export": "yarn build; next export -o dist",
     "type-check": "tsc"
   },
   "dependencies": {
