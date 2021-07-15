@@ -43,7 +43,7 @@ const IndexPage: NextPage = () => {
           <h1 className="text-4xl xl:text-6xl font-bold mb-4 xl:mb-12 text-gray-900 dark:text-gray-100 space-y-2 xl:space-y-4">
             <p>Hi! 👋</p>
             <p>I&apos;m Vincent.</p>
-            <p className="text-2xl xl:text-3xl">🏳️‍🌈 (he/they)</p>
+            <p className="text-2xl xl:text-3xl">(he/they) 🏳️‍🌈</p>
           </h1>
           <div
             id="body"
@@ -91,7 +91,7 @@ const IndexPage: NextPage = () => {
             >
               <FontAwesomeIcon
                 icon={faGithub}
-                className="w-6 h-6 sm:w-8 sm:h-8"
+                className="text-3xl w-6 h-6 sm:w-8 sm:h-8"
               />
             </a>
             <a
@@ -101,7 +101,7 @@ const IndexPage: NextPage = () => {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="w-6 h-6 sm:w-8 sm:h-8"
+                className="text-3xl w-6 h-6 sm:w-8 sm:h-8"
               />
             </a>
             <a
@@ -111,7 +111,7 @@ const IndexPage: NextPage = () => {
             >
               <FontAwesomeIcon
                 icon={faScroll}
-                className="w-6 h-6 sm:w-8 sm:h-8"
+                className="text-3xl w-6 h-6 sm:w-8 sm:h-8"
               />
             </a>
             <a
@@ -119,7 +119,10 @@ const IndexPage: NextPage = () => {
               title="Email"
               className="text-gray-900 dark:text-gray-100 transform duration-300 hover:-translate-y-1"
             >
-              <FontAwesomeIcon icon={faAt} className="w-6 h-6 sm:w-8 sm:h-8" />
+              <FontAwesomeIcon
+                icon={faAt}
+                className="text-3xl w-6 h-6 sm:w-8 sm:h-8"
+              />
             </a>
             <a
               href="/links"
@@ -128,7 +131,7 @@ const IndexPage: NextPage = () => {
             >
               <FontAwesomeIcon
                 icon={faLink}
-                className="w-6 h-6 sm:w-8 sm:h-8"
+                className="text-3xl w-6 h-6 sm:w-8 sm:h-8"
               />
             </a>
           </div>

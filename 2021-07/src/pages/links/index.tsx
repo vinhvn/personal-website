@@ -53,86 +53,90 @@ const IndexPage: NextPage = () => {
             </div>
           </div>
 
-          <LinkContainer from="black" to="gray-800" href="/">
+          <LinkContainer
+            from="hover:from-black"
+            to="hover:to-gray-800"
+            href="/"
+          >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faHome} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faHome} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Personal Website</span>
           </LinkContainer>
 
           <LinkContainer
-            from="yellow-900"
-            to="yellow-700"
+            from="hover:from-yellow-900"
+            to="hover:to-yellow-700"
             href="https://www.github.com/vinhvn"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faGithub} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faGithub} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">GitHub</span>
           </LinkContainer>
 
           <LinkContainer
-            from="red-700"
-            to="red-500"
+            from="hover:from-red-700"
+            to="hover:to-red-500"
             href="https://www.linkedin.com/in/vinhvn"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faLinkedin} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faLinkedin} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">LinkedIn</span>
           </LinkContainer>
 
           <LinkContainer
-            from="yellow-700"
-            to="yellow-500"
+            from="hover:from-yellow-700"
+            to="hover:to-yellow-500"
             href="https://drive.google.com/file/d/1UjTZzVhJoTKityUbo9Qd7Kx0Ezt6UDkt/view?usp=sharing"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faScroll} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faScroll} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Resume</span>
           </LinkContainer>
 
           <LinkContainer
-            from="yellow-500"
-            to="yellow-300"
+            from="hover:from-yellow-500"
+            to="hover:to-yellow-300"
             href="mailto:vincentn337@gmail.com"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faAt} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faAt} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Email Me</span>
           </LinkContainer>
 
           <LinkContainer
-            from="green-600"
-            to="green-400"
+            from="hover:from-green-600"
+            to="hover:to-green-400"
             href="https://open.spotify.com/user/tjplab770o3f0ig61a2n3il5x?si=a72d54673cb74aea"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faSpotify} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faSpotify} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Spotify</span>
           </LinkContainer>
 
           <LinkContainer
-            from="blue-600"
-            to="blue-400"
+            from="hover:from-blue-600"
+            to="hover:to-blue-400"
             href="https://www.figma.com/@vinhvn"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faFigma} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faFigma} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Figma</span>
           </LinkContainer>
 
           <LinkContainer
-            from="indigo-500"
-            to="purple-500"
+            from="hover:from-indigo-500"
+            to="hover:to-purple-500"
             href="https://www.paypal.me/vinhhvn"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
-              <FontAwesomeIcon icon={faCoffee} className="w-8 h-8" />
+              <FontAwesomeIcon icon={faCoffee} className="text-3xl w-8 h-8" />
             </div>
             <span className="font-semibold">Buy Me A Coffee</span>
           </LinkContainer>

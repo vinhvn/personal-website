@@ -10,6 +10,10 @@ module.exports = {
               './src/components/**/*.{js,jsx,ts,tsx}',
               './src/styles/**/*.css',
             ],
+            options: {
+              whitelist: [],
+              whitelistPattern: [/fa/g]
+            },
             defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
           },
         ]
