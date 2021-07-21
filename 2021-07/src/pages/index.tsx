@@ -105,7 +105,7 @@ const IndexPage: NextPage = () => {
               />
             </a>
             <a
-              href="https://drive.google.com/file/d/1UjTZzVhJoTKityUbo9Qd7Kx0Ezt6UDkt/view?usp=sharing"
+              href="/r.pdf"
               title="Resume"
               className="text-gray-900 dark:text-gray-100 transform duration-300 hover:-translate-y-1"
             >

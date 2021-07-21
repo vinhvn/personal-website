@@ -89,7 +89,7 @@ const IndexPage: NextPage = () => {
           <LinkContainer
             from="hover:from-yellow-700"
             to="hover:to-yellow-500"
-            href="https://drive.google.com/file/d/1UjTZzVhJoTKityUbo9Qd7Kx0Ezt6UDkt/view?usp=sharing"
+            href="/r.pdf"
           >
             <div className="absolute left-0 ml-2 top-1/2 transform -translate-y-1/2">
               <FontAwesomeIcon icon={faScroll} className="text-3xl w-8 h-8" />
