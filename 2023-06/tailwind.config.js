@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from 'tailwindcss/plugin';
+
 export default {
   content: ['./src/**/*.{html,svelte,js,ts}'],
   presets: [],
@@ -894,7 +896,9 @@ export default {
       150: '150ms',
       200: '200ms',
       300: '300ms',
+      400: '400ms',
       500: '500ms',
+      600: '600ms',
       700: '700ms',
       1000: '1000ms',
     },
@@ -988,5 +992,20 @@ export default {
       50: '50',
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          'animation-delay': value => {
+            return {
+              'animation-delay': value,
+            };
+          },
+        },
+        {
+          values: theme('transitionDelay'),
+        },
+      );
+    }),
+  ],
 };

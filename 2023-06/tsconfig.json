@@ -17,7 +17,9 @@
     "baseUrl": "./src",
     "paths": {
       "@components": ["components"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"]
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],

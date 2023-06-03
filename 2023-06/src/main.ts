@@ -1,7 +1,7 @@
 import './index.css';
-import { App } from '@components';
+import { Home } from '@pages';
 
-const app = new App({
+const app = new Home({
   target: document.getElementById('app'),
 });
 
