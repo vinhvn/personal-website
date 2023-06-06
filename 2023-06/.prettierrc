@@ -2,8 +2,8 @@
   "arrowParens": "avoid",
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 120,
-  "plugins": ["prettier-plugin-svelte"],
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
   "semi": true,
   "svelteSortOrder": "options-scripts-styles-markup",
   "svelteStrictMode": false,
@@ -12,5 +12,6 @@
   "svelteIndentScriptAndStyle": true,
   "tabWidth": 2,
   "bracketSameLine": false,
-  "bracketSpacing": true
+  "bracketSpacing": true,
+  "htmlWhitespaceSensitivity": "css"
 }
