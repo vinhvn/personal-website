@@ -20,7 +20,7 @@
     { name: 'Email', url: 'mailto:vincentn337@gmail.com' },
     {
       name: 'Resume',
-      url: 'https://cdn.discordapp.com/attachments/413806375655833601/1114608129850753134/r2022.png',
+      url: 'https://drive.google.com/file/d/1ptjGjLhdewnqNn80cQIEnDsLkb1MxOOm/view?usp=sharing',
     },
   ];
 </script>
